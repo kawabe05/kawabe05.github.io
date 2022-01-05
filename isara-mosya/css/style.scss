@@ -1,0 +1,903 @@
+@import "compass";
+
+.text-center {
+    text-align: center;
+}
+
+.under-line {
+    text-decoration: underline;
+}
+
+.flex {
+    display: flex;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+.subtitle-font {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.font-w-600 {
+    font-weight: 600;
+}
+
+.font-color-white {
+    color: #fff;
+}
+
+.parenthesis {
+              margin: auto;
+              position: relative;
+              width: 860px;
+              height: 100px;
+              padding: 15px 30px;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              &:before {
+                  position: absolute;
+                  content: '';
+                  width: 40px;
+                  height: 40px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  top: 0;
+                  left: 0;
+                  border-top: 4px solid #ebb94d;
+                  border-left: 4px solid #ebb94d;
+              }
+              &:after {
+                  position: absolute;
+                  content: '';
+                  width: 40px;
+                  height: 40px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  bottom: 0;
+                  right: 0;
+                  border-bottom: 4px solid #ebb94d;
+                  border-right: 4px solid #ebb94d;
+              }
+            }
+            
+.Comment {
+          font-size: 14px;
+          font-weight: 300;
+          margin-top: 50px;
+      }
+      
+.section-under-b {
+        background-color: #096EA9;
+        padding: 20px 0;
+}      
+
+        a {
+            text-decoration: none;
+        }
+        .sns-btn {
+            color: #fff;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 4px;
+        }
+        .twitter-btn {
+            background-color: #1B95E0;
+            
+        }
+        .like-btn {
+            background-color: #4267B2;
+        }
+
+#header-wapper {
+    background-color: #fff;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    .header-contenr {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        a {
+            display: flex;
+            text-decoration: none;
+            color: #333333;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            img {
+                width: 120px;
+                height: 40px;
+                margin-right: 5px;
+            }
+        }
+        .header-right {
+           width: 320px;
+           height: 45px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 13px;
+           font-weight: 100;
+           letter-spacing: 3px;
+           margin-top: 15px;
+           background-color: #DA6B64;
+           border-radius: 50px;
+           color: #ffffff;
+        }
+    }
+}
+
+.space {
+    height: 75px;
+}
+
+#top-img-wapper {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/bangkok-pc2.jpg");
+    background-size: cover;
+    .top-img-contenr {
+        padding-top: 70px;
+        padding-bottom: 100px;
+        text-align: center;
+        letter-spacing: 3px;
+        img {
+            width: 300px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+        }
+        .font-midl {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 50px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 5px;
+        }
+    }
+}
+
+#contact-wapper {
+    background-color: #EBB94D;
+    height: 600px;
+    .contenr {
+        padding-top: 35px;
+        p {
+        margin-top: 0;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        }
+        .bg {
+            margin: auto;
+            width: 465px;
+            background-color: #fff;
+            border-radius: 5px;
+        .warning {
+                color: #C7254E;
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .main-btn {
+            width: 1030px;
+            height: 100px;
+            background-color: #DA6B64;
+            border-radius: 50px;
+            margin: auto;
+            line-height: 100px;
+            font-size: 28px;
+            letter-spacing: 3px;
+            margin-top: 45px;
+            margin-bottom: 70px;
+        }
+        .deadline {
+            font-size: 21px;
+            letter-spacing: 2px;
+            line-height: 40px;
+        }
+    }
+
+}
+
+#lead-wapper {
+    height: 520px;
+    background-image: url("../images/isara-bg.jpg");
+    .lead-contenr {
+        margin-top: 80px;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 80px;
+            line-height: 70px;
+            color: #333333;
+        }
+        .parenthesis {
+              margin: auto;
+              position: relative;
+              width: 860px;
+              height: 100px;
+              padding: 15px 30px;
+              -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+              &:before {
+                  position: absolute;
+                  content: '';
+                  width: 40px;
+                  height: 40px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  top: 0;
+                  left: 0;
+                  border-top: 4px solid #ebb94d;
+                  border-left: 4px solid #ebb94d;
+              }
+              &:after {
+                  position: absolute;
+                  content: '';
+                  width: 40px;
+                  height: 40px;
+                  -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+                  bottom: 0;
+                  right: 0;
+                  border-bottom: 4px solid #ebb94d;
+                  border-right: 4px solid #ebb94d;
+              }
+            }
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 32px;
+            margin: 30px auto;
+            strong {
+                background:linear-gradient(transparent 70%, #EBB94E 0%);
+            }
+        }
+    }
+}
+
+#about-wapper {
+    background-color: #FEF5E0;
+    padding: 80px 0;
+    letter-spacing: 2px;
+    position: relative;
+    .about-circle {
+        background-color: #EBB94E;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        color: #fff;
+        line-height: 80px;
+        position: absolute;
+        top: -40px;
+        left: 45%;
+    }
+    .skill-subtitle {
+        margin-top: 40px;
+    }
+    .skill-contenr {
+        background-color: #fff;
+        padding: 20px 0;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 10px;
+        border: 2px solid #EBB94E;
+        .flex {
+            width: 700px;
+            margin: auto;
+            .skill {
+                width: 180px;
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+#not-skill-wapper {
+    background-image: url("../images/isara-bg3.jpg");
+    background-size: cover;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        span {
+            color: #EBB94D;
+        }
+    }
+    .step-contenr {
+        width: 90%;
+        margin: 30px auto;
+        .step-box {
+            margin: 10px;
+            width: 375px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 30px 10px;
+            .step-header {
+                margin: 0 auto;
+                width: 90%;
+                background-color: #EBB94D;
+                border-radius: 5px;
+                color: #fff;
+            }
+            .step-box-when {
+                margin-top: 30px;
+                font-size: 14px;
+            }
+            .step-box-text {
+                font-size: 16px;
+            }
+        }
+    }
+    .section-under-b {
+        background-color: #096EA9;
+        padding: 20px 0;
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+            span {
+                color: #EBB94D;
+            }
+        }
+    }
+}
+
+#learn-wapper {
+    padding: 30px 0;
+        span {
+            font-size: 16px;
+        }
+    p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .learn-contenr {
+        img {
+            width: 180px;
+            margin: 20px;
+        }
+    }
+    .learn-contenr-under {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+#merit-wapper {
+    background-color: #FEF5E0;
+    padding: 30px 0;
+
+        span {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 0;
+        }
+    .merit {
+        width: 90%;
+        margin: 50px auto;
+        .merit-box {
+            margin: 20px;
+            width: 360px;
+            img {
+                width: 320px;
+                height: 180px;
+            }
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                color: #EBB94E;
+                text-align: left;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 300;
+                text-align: left;
+                color: #333333;
+            }
+        }
+      }
+      .merit-contenr {
+          width: 80%;
+          margin: auto;
+          background-color: #fff;
+          border-radius: 10px;
+          border: 2px solid #EBB94E;
+          padding: 20px;
+          font-weight: 600;
+          h4 {
+              font-size: 28px;
+              color: #EBB94E;
+          }
+          p {
+              font-size: 20px;
+          }
+          .merit-text {
+              font-size: 16px;
+          }
+      }
+      .Comment {
+          font-size: 14px;
+          font-weight: 300;
+          margin-top: 50px;
+      }
+}
+
+#member-wapper {
+    background-image: url("../images/isara-bg2.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    .menber-contenr {
+        p {
+            color: #fff;
+        }
+        .menber-title {
+            margin-top: 0;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .subtitle-font {
+            margin-bottom: 150px;
+        }
+        .member {
+            width: 60%;
+            margin: auto;
+            .menber-box {
+                width: 50%;
+                padding: 30px;
+                box-sizing: border-box;
+                border: 3px solid #fff;
+                margin: 20px;
+                position: relative;
+                .menber-text {
+                    text-align: left;
+                }
+                img {
+                    position: absolute;
+                    top: -120px;
+                    left: 25%;
+                    border-radius: 50%;
+                }
+                .Position {
+                    margin-top: 70px;
+                }
+            }
+            .menber-bottom {
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+
+#q-a-wapper {
+    padding-bottom: 50px;
+    .q-a-header {
+        background-color: #EBB94E;
+        padding: 50px;
+        position: relative;
+        &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: -20px;
+              left: 0;
+              width: 0px;
+              height: 0px;
+              margin: auto;
+              border-style: solid;
+              border-color: #EBB94E transparent transparent transparent;
+              border-width: 20px 20px 0 20px;
+        }
+        .circle {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            color: #EBB94E;
+            display: inline-block;
+        }
+        .q-a-title {
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .parenthesis {
+            color: #fff;
+            &:before {
+                border-top: 4px solid #fff;
+                  border-left: 4px solid #fff;
+            }
+            &:after {
+                border-bottom: 4px solid #fff;
+                border-right: 4px solid #fff;
+        }
+    }
+  }
+  .section-title {
+      margin-bottom: 0;
+  }
+  .subtitle-font {
+      margin-top: 10px;
+  }
+  .Comment {
+      margin-top: 30px;
+  }
+  .interview {
+      width: 50%;
+      margin: 20px auto;
+      color: #777777;
+      img {
+          width: 240px;
+          border: 4px solid #EBB94E;
+          margin-right: 50px;
+      }
+  }
+} 
+
+#content {
+    background-image: url("../images/isara-bg4.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    .section-title {
+        margin-bottom: 0;
+    }
+    .contenr {
+        .content-list {
+            width: 70%;
+            margin: auto;
+            .list-left {
+                margin: 20px;
+                margin-bottom: 100px;
+                width: 50%;
+                background-color: #fff;
+                border-radius: 4px;
+                border: 2px solid #096EA9;
+                p {
+                    border-bottom: 1px dotted #E5E5E5;
+                    height: 55px;
+                    line-height: 55px;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .list-top {
+                    border-radius: 2px 2px 0 0;
+                    background-color: #096EA9;
+                    margin: 0;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    letter-spacing: 2px;
+                }
+            }
+            .list-right {
+                margin: 20px;
+                margin-bottom: 325px;
+                width: 50%;
+                background-color: #fff;
+                border-radius: 4px;
+                border: 2px solid #096EA9;
+                p {
+                    border-bottom: 1px dotted #E5E5E5;
+                    height: 55px;
+                    line-height: 55px;
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+                .list-top {
+                    border-radius: 2px 2px 0 0;
+                    background-color: #096EA9;
+                    margin: 0;
+                    height: 60px;
+                    line-height: 60px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+    .section-under-b {
+        p {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+#flow-wapper {
+    padding-bottom: 30px;
+    .flow-img-bottom {
+        margin-bottom: 50px;
+    }
+    .flow-box {
+        background-color: #FEF5E0;
+        width: 90%;
+        border-radius: 20px;
+        padding: 30px;
+        margin: auto;
+        .flow-box-left {
+            width: 200px;
+            margin: 0 30px;
+            p {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+        .flow-box-right {
+            text-align: left;
+            .flow-titlie {
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .Comment {
+                margin-top: 0;
+                color: #777777;
+            }
+        }
+    }
+}
+
+#bangkok-wapper {
+    background-image: url("../images/isara-bg5.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    .bangkok-contenr {
+        margin-left: 10%;
+        ul {
+            letter-spacing: 2px;
+            line-height: 40px;
+            padding: 15px;
+        }
+        .font-size-24 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+        .font-size-16 {
+            font-size: 16px;
+        }
+        .font-size-20 {
+            font-size: 20px;
+        }
+    }
+}
+
+#Benefits-wapper {
+    background-color: #F7C23C;
+    padding: 50px 0 30px 0;
+    span {
+        color: #fff;
+    }
+    .Benefits-contenr {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 80%;
+        border: 2px solid #fff;
+        margin: auto;
+        .Benefits-box {
+            background-color: #fff;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            margin: 50px;
+            position: relative;
+            .tokuten-box {
+                position: absolute;
+                top: 30px;
+                padding: 0 15px;
+                .tokuten {
+                    font-size: 24px;
+                    font-weight: 300;
+                    color: #F7C23C;
+                    margin-bottom: 10px;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+#message1-wapper {
+    padding: 50px 0;
+    background-image: url("../images/isara-bg6.jpg");
+    background-size: cover;
+    .parenthesis {
+        &:before {
+                  border-top: 4px solid #fff;
+                  border-left: 4px solid #fff;
+              }
+              &:after {
+                  border-bottom: 4px solid #fff;
+                  border-right: 4px solid #fff;
+              }
+    }
+}
+
+#message2-wapper {
+    padding: 50px 0;
+    letter-spacing: 2px;
+    .message2-subtitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .message-box {
+        width: 60%;
+        margin: auto;
+        img {
+            width: 180px;
+            height: 150px;
+            padding: 0 30px;
+        }
+        .message-text-box {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: left;
+            color: #333333;
+        }
+    }
+}
+
+#from-wapper {
+    background-color: #EBB94E;
+    padding: 50px;
+    letter-spacing: 2px;
+    .section-title {
+        margin-bottom: 0;
+        color: #333333;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+    .contact-from {
+        width: 80%;
+        margin: auto;
+    .from {
+        margin: 20px auto;
+        input {
+        border-radius: 5px;
+        width: 80%;
+        height: 30px;
+        padding: 10px;
+        border: none;
+        }
+      }
+      .from-textarea {
+          margin: 50px auto 0 ;
+        textarea {
+        border-radius: 5px;
+        width: 80%;
+        height: 100px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        }
+      }
+      button {
+          width: 80%;
+            height: 50px;
+            background-color: #DA6B64;
+            border-radius: 50px;
+            margin: auto;
+            line-height: 50px;
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-top: 40px;
+            margin-bottom: 70px;
+            color: #fff;
+            border: none;
+      }
+    }
+}
+
+#question-wapper {
+    .accordion {
+        width: 70%;
+        margin: auto;
+        text-align: left;
+        .inner {
+            display: none;
+            .q-content {
+                font-size: 16px;
+                font-weight: 600;
+                color: #333333;
+            }
+        }
+        .open {
+            display: block;
+        }
+        li {
+            list-style: none;
+        p {
+            cursor: pointer;
+            padding: 20px;
+            border: solid 2px #E5E5E5;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+            .fa-question-circle-o {
+                color: #096EA9;
+            }
+            .angle {
+                position: absolute;
+                top: 10px;
+                right: 30px;
+                font-size: 50px;
+                color: #E5E5E5;
+            }
+        }
+        }
+    }
+}
+
+footer {
+    background-color: #ECECEC;
+    height: 100px;
+    font-size: 10px;
+    width: 300;
+    color: #333333;
+    padding: 30px;
+    a {
+        text-decoration: none;
+    }
+    .credit {
+        margin-top: 30px;
+    }
+}
+
+#pageTop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+#pageTop i {
+  padding-top: 10px
+}
+
+#pageTop a {
+  display: block;
+  z-index: 999;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #ECECEC;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+}
+
+#pageTop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
