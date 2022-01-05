@@ -1,0 +1,337 @@
+@charset "UTF-8";
+html {
+    font-size : 62.5%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, 
+    "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", 
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+    background-color: #fff;
+    color: #13191b;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #656C6E;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    padding: 0 25px;
+}
+
+li a {
+    color: #fff;
+}
+
+.header-contenr {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#head-wapper {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.top-logo {
+    padding-top: 45px;
+    padding-left: 90px;
+    width: 250px;
+}
+
+.head-nav {
+    padding-top: 80px;
+    padding-right: 90px;
+}
+
+.main-visual {
+    box-sizing: border-box;
+    display: block;
+    background-color: #f6f6f6;
+}
+
+.img-main-visual{
+    width: 100%;
+    height: 700px;
+    background-color: #f6f6f6;
+    background-image: url("../images/main_visual_7.jpg");
+    background-size: cover;
+    position: relative;
+    max-height: 900px;
+    border-bottom-left-radius: 50% 2%;
+    border-bottom-right-radius: 50% 2%;
+}
+
+#concept, #news {
+    background-color: #f6f6f6;
+}
+
+.contenr {
+    margin: auto;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 44px;
+}
+
+.concept-text {
+    width: 400px;
+    margin: auto;
+    padding: 0 100px;
+}
+
+p {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.icon-text {
+    margin: 50px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.product-contenr {
+    width: 800px;
+    margin: auto;
+    padding: 100px;
+}
+
+.secton-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 200;
+    letter-spacing: 10px;
+}
+
+.btn-more {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #13191b;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-top: 5px;
+    line-height: 35px;
+    color: #13191b;
+    transition: .1s;
+}
+
+.btn-more:after {
+    font-family: "FontAwesome";
+    content: "\f105";
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #13191b;
+}
+
+.btn-more:hover {
+    background: #13191b;
+    color: #fff;
+}
+
+.product-main-contenr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-box {
+    width: 30%;
+    margin: 13px;
+}
+
+.item-box:hover {
+    opacity: 0.6;
+}
+
+.item-img {
+    width: 250px;
+}
+
+h4 {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.news-box {
+    display: flex;
+    margin-top: 50px;
+}
+
+.news-box:hover {
+    opacity: 0.6;
+}
+
+.news-box img {
+    width: 320px;
+    height: 170px;
+}
+
+.item-right {
+    margin-left: 30px;
+}
+
+.news-h4 {
+    margin: 0;
+    padding-left: 0;
+}
+
+.day {
+    margin: 0;
+    font-size: 12px;
+    color: #656c6e;
+}
+
+.news-text {
+    font-size: 13px;
+    color: #656c6e;
+    line-height: 22px;
+}
+
+#share {
+    background-color: #fff;
+    position: relative;
+}
+
+.backtop-arrow {
+    display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-o-border-radius: 50px;
+	-ms-border-radius: 50px; 
+	border-radius: 50px;
+    position: absolute;
+    top: -30px;
+    left: 48%;
+}
+
+.backtop-arrow a {
+    width: 50px;
+	height: 50px;
+}
+
+.backtop-arrow:hover {
+    position: absolute;
+    top: -35px;
+    left: 48%;
+}
+
+.backtop {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 10px;
+    left: 35%;
+}
+
+.share-contenr {
+    text-align: center;
+}
+
+.share-btn {
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    border: 1px solid #4871A9;
+    text-align: center;
+    margin: 30px 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    line-height: 35px;
+    color: #4871A9;
+    transition: .4s;
+}
+
+.facebook:hover {
+    background-color: #4871A9;
+    color: #ffffff;
+}
+
+.twiwwer {
+    border: 1px solid #70BDD3;
+    color: #70BDD3;
+}
+
+.twiwwer:hover {
+    background-color: #70BDD3;
+    color: #ffffff;
+}
+
+.hatena {
+    border: 1px solid #2F9BCD;
+    color: #2F9BCD;
+}
+
+.hatena:hover {
+    background-color: #2F9BCD;
+    color: #ffffff;
+}
+
+.footer-nav-wapper {
+    background-color: #939899;
+    text-align: center;
+    height: 90px;
+}
+
+.footer-nav-contenr {
+    width: 500px;
+    margin: auto;
+}
+
+#footer-wapper {
+    background-color: #656C6E;
+}
+
+.footer-contenr {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.footer-contenr img {
+    width: 90px;
+    margin: 30px 0;
+}
+
+.footer-nav {
+    padding: 20px 0;
+}
+
+small {
+    line-height: 147px;
+    color: #fff;
+    font-size: 10px;
+}
+
