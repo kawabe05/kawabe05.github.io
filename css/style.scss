@@ -1,0 +1,504 @@
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Noto+Sans+JP:wght@100&display=swap');
+
+$main-color: #55acee;
+$base-color: #F4F5F7;
+$accent-color: #ef3f40;
+$twitter-color: #1D9CF0;
+
+//PC非表示
+.tb {
+    display: none;
+}
+
+body {
+    background-color: $base-color;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+section {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(odd) {
+    h3 {
+        color: $base-color;
+    }
+}
+//先頭に戻る
+#page_top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: -50px;
+    bottom: 50px;
+    background: $accent-color;
+    opacity: 0.6;
+    border-radius: 50%;
+    z-index: 100;
+    a {
+        position: relative;
+        display: block;
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+      }
+      a::before {
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f102';
+        font-size: 25px;
+        color: $base-color;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: -15px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+      }
+  }
+
+.content-area {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .text-box {
+        margin: auto;
+        font-size: 2rem;
+    }
+}
+//ヘッダー
+.header {
+    background-image: url(../images/man-top.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    .header__logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+    }
+    .header__pc-nav {
+        margin-top: 15px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        ul a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: $base-color;
+        }
+        ul a:hover {
+            color: $accent-color;
+            border-bottom: solid 1px $accent-color;
+        }
+    }
+    //フェードイン
+    .fade-left {
+        animation-name:fadeLeftAnime;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+        opacity:0;
+        }
+        @keyframes fadeLeftAnime {
+          from {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+    .header__text {
+        position: absolute;
+        top: 300px;
+        left: 0;
+        font-size: 5rem;
+        color: $base-color;
+        h2 {
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 0.08em;
+        }
+    }
+    .fa-angle-double-down {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        font-size: 5rem;
+        color: $base-color;
+    }
+}
+//ABOUT
+.about {
+    background-image: url(../images/about.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    transform: skewY(-5deg);
+    .content-area__about {
+        color: $base-color;
+        transform: skewY(5deg);
+        .text-box__about {
+            width: 50%;
+            padding: 20px;
+            background-color: rgba(35,37,42,0.45);
+        }
+    }
+}
+//WORK
+.diagonal-blue {
+    position: relative;
+    background-color: $main-color;
+}
+.diagonal-blue::before {
+    border-color: transparent $main-color transparent transparent;
+    border-style: solid;
+    border-width: 50px 100vw 0 0;
+    content: "";
+    height: 0;
+    position: absolute;
+    top: -50px;
+  }
+.diagonal-blue::after {
+    border-color: transparent  transparent  transparent $main-color;
+    border-style: solid;
+    border-width: 0 0 50px 100vw;
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -50px;
+  }
+//スライダー
+.slick-slide {
+    img {
+    height: 30vw;
+    max-height: 400px;
+    min-height: 350px;
+    box-shadow: 15px 15px 25px 0 rgba(0, 0, 0, .2);
+  } 
+      figcaption {
+        text-align: center;
+    }
+}
+.slick-dots li button:before {
+    font-size: 24px !important;
+  }
+.slick-prev::before,
+.slick-next::before {
+      font-size: 24px !important;
+      font-weight: bold !important;
+  }
+  .slick-slide {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    transform: scale( .75 );
+  }
+  .is--active {
+    transform: scale( 1 );
+  } 
+//SKILL
+.skill {
+    height: 1000px;
+}
+//カード
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    .card__icon-wrapper {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+        .card__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 10rem;
+        }
+        .fa-html5 {
+            color: #E44D27;
+        }
+        .fa-css3 {
+            color: #1C5EA6;
+        }
+        .fa-js {
+            color: #EBD41C;
+        }
+        .fa-wordpress {
+            color: #1F6F92;
+        }
+    }
+    .card__body {
+        padding: 15px;
+        .card__title {
+            margin-bottom: 5px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .card__text {
+            color: #777;
+            font-size: 1.5rem;
+        }
+    }
+    .card__body > *:last-child {
+        margin-bottom: 0;
+    }
+}
+.cards--col3 {
+    margin-bottom: -30px;
+}
+    .cards--col3 > .cards__item {
+        width: 31.707%;
+        margin-right: 2.43902%;
+        margin-bottom: 30px;
+    }
+    .cards--col3 > .cards__item:nth-of-type(3n) {
+        margin-right: 0;
+    }
+    
+//フェードイン
+.fadeUp {
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+    }
+    @keyframes fadeUpAnime{
+      from {
+        opacity: 0;
+      transform: translateY(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateY(0);
+      }
+    }
+    
+    /* アニメーションスタートの遅延時間を決めるCSS*/
+    .fade02 {
+        animation-delay: 0.2s;
+    }
+    .fade03 {
+        animation-delay: 0.4s;
+    }
+    .fade04 {
+        animation-delay: 0.6s;
+    }
+    .fade05 {
+        animation-delay: 0.8s;
+    }
+//CONTACT
+.contact__text-box {
+    p {
+        text-align: center;
+    }
+}
+.contact-btn__contener {
+    margin: 20px 0 50px;
+    text-align: center;
+    .contact-btn {
+        border: none;
+        padding: 20px;
+        width: 400px;
+        border-radius: 50px;
+        font-size: 2rem;
+        background-color: $accent-color;
+        color: $base-color;
+    }
+}
+.contact-icon {
+    text-align: center;
+    font-size: 3rem;
+    .contact-icon__twitter {
+        color: $twitter-color;
+    }
+}
+//フッター
+.footer {
+    background-color: $main-color;
+    padding: 20px 0;
+    .footer-area {
+        display: flex;
+        justify-content: space-between;
+        .footer-right {
+                margin-right: 10%;
+            ul a {
+                font-size: 2rem;
+                color: $base-color;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width : 1024px) {
+    /* タブレット用レイアウト */
+    .pc {
+        display: none;
+    }
+    .tb {
+        display: block;
+    }
+    .header {
+        height: 600px;
+        .header__text {
+            top: 250px;
+        }
+        .fa-angle-double-down {
+            top: 550px;
+        }
+    }
+    section {
+        height: 500px;
+    }
+    /* drop-menu */
+.drop-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: all 0.8s;
+    z-index: 2;
+  }
+    .menu__ul--item {
+          height: 55px;
+          line-height: 55px;
+          border-bottom: 1px dashed #333;
+          font-size: 2rem;
+          color: #fff;
+          text-transform: uppercase;
+          background: $main-color;
+      }
+  .drop-menu__active {
+    transform: translateY(-7%);
+  }
+  .hamburger-icon {
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 3;
+      span {
+          display: block;
+          position: absolute;
+          width: 30px;
+          border-bottom: solid 2px;
+          transition: .30s;
+          -webkit-transition: .30s;
+          -moz-transition: .30s;
+          color: $base-color;
+        }
+    }
+    .hamburger-icon span:nth-child(1) {
+        top: 10px;
+    }
+    .hamburger-icon span:nth-child(2) {
+        top: 20px;
+    }
+    .hamburger-icon span:nth-child(3) {
+        top: 30px;
+    }
+    .drop-menu__active span:nth-child(1) {
+        top: 20px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+    }
+    .drop-menu__active span:nth-child(2) {
+        top: 20px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+    .drop-menu__active span:nth-child(3) {
+        top: 20px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+    }
+    .diagonal-blue {
+        overflow: hidden;
+    }
+    .slick-slide {
+      img {
+      margin: auto;
+    } 
+  }
+}
+
+@media screen and (max-width : 599px) {
+    /* スマホ用レイアウト */
+    #page_top {
+        display: none;
+    }
+    .slick-slide {
+        img {
+        min-height: 150px;
+        height: 25vh;
+      } 
+    }
+    #concept {
+        .content-area {
+            .text-box {
+                margin: 10px;
+            }
+        }
+    }
+    .about {
+        .content-area__about {
+            .text-box__about {
+                width: 80%;
+            }
+        }
+    }
+    .skill {
+        height: 2500px;
+    }
+    .card--col3 {
+        margin-bottom: -20px;
+    }
+    .cards > .cards__item {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+        .cards--col3 > .cards__item:nth-of-type(3n) {
+            margin: auto;
+        }
+    .contact-btn__contener {
+        .contact-btn {
+            width: 300px;
+        }
+    }
+}
