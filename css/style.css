@@ -232,7 +232,7 @@ section:nth-child(odd) h3 {
 }
 
 .slick-slide {
-  height: 70%;
+  height: 70% !important;
 }
 
 .slick-slide img {
