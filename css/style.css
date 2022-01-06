@@ -231,6 +231,10 @@ section:nth-child(odd) h3 {
   bottom: -50px;
 }
 
+.slick-slide {
+  height: 70%;
+}
+
 .slick-slide img {
   height: 30vw;
   max-height: 400px;
